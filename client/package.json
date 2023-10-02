@@ -14,6 +14,7 @@
     "@types/node": "^16.18.55",
     "@types/react": "^18.2.23",
     "@types/react-dom": "^18.2.8",
+    "async-mutex": "^0.4.0",
     "framer-motion": "^10.16.4",
     "i": "^0.3.7",
     "jwt-decode": "^3.1.2",

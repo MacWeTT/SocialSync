@@ -1,24 +1,15 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { RootState } from "../store";
-
-const BASEURL = process.env.REACT_APP_PUBLIC_BACKEND_URL!;
+import { createApi } from "@reduxjs/toolkit/query/react";
+import reAuthBaseQuery from "./reAuthBaseQuery";
 
 export const authAPI = createApi({
   reducerPath: "authAPI",
-  baseQuery: fetchBaseQuery({
-    prepareHeaders: (headers, { getState }) => {
-      const token = (getState() as RootState).user.access_token;
-      if (token) headers.set("Authorization", `Bearer ${token}`);
-      return headers;
-    },
-    baseUrl: `${BASEURL}/users/`,
-  }),
+  baseQuery: reAuthBaseQuery,
   endpoints: (builder) => ({
     loginUser: builder.mutation({
-      query: (body) => ({
+      query: (credentials) => ({
         url: "login/",
         method: "POST",
-        body,
+        body: credentials,
       }),
     }),
   }),

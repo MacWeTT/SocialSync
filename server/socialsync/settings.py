@@ -1,4 +1,5 @@
 from pathlib import Path
+from datetime import timedelta
 from dotenv import load_dotenv
 import os
 
@@ -30,6 +31,7 @@ PROJECT_APPS = [
 ]
 
 EXTERNAL_APPS = [
+    "rest_framework_simplejwt",
     "rest_framework",
     "corsheaders",
     "drf_yasg",
@@ -46,6 +48,28 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+# OAUTH2
+GOOGLE_OAUTH2_CLIENT_ID = os.environ.get("GOOGLE_OAUTH2_CLIENT_ID")
+GOOGLE_OAUTH2_CLIENT_SECRET = os.environ.get("GOOGLE_OAUTH2_CLIENT_SECRET")
+
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ),
+    # "DEFAULT_FILTER_BACKENDS": ["django_filters.rest_framework.DjangoFilterBackend"],
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination",
+    "PAGE_SIZE": 2,
+}
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=10),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=10),
+    "SIGNING_KEY": os.environ.get("SECRET_KEY"),
+    "AUTH_HEADER_TYPES": ("Bearer",),
+    # "TOKEN_OBTAIN_SERIALIZER": "users.utils.serializers.TokenObtainPairSerializer",
+}
 
 ROOT_URLCONF = "socialsync.urls"
 
@@ -90,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+# Internationalization
 LANGUAGE_CODE = "en-us"
 TIME_ZONE = "Asia/Kolkata"
 USE_I18N = True
@@ -98,6 +122,13 @@ USE_TZ = True
 
 
 STATIC_URL = "static/"
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+
+MEDIA_URL = "media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
