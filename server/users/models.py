@@ -4,6 +4,8 @@ from django.db import models
 
 class User(AbstractUser):
     avatar = models.ImageField(upload_to="avatars/", null=True, blank=True)
+    bio = models.TextField(null=True, blank=True)
+    # add roles
     verified = models.BooleanField(default=False)
     followers = models.ManyToManyField(
         "self", related_name="user_followees", symmetrical=False
