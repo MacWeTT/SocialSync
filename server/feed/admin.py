@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Community, Comment
+from .models import Post, Community, Comment, Like, Notification
 
 
 @admin.register(Post)
@@ -15,3 +15,8 @@ class Community(admin.ModelAdmin):
 @admin.register(Comment)
 class Comment(admin.ModelAdmin):
     list_display = ("post", "author", "text", "parent_comment", "created_at")
+
+
+admin.site.register(Like)
+
+admin.site.register(Notification)

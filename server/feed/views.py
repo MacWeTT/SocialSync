@@ -1,3 +1,5 @@
+from django.contrib.auth import get_user_model
 from django.shortcuts import render
+from rest_framework import viewsets, permissions
 
-# Create your views here.
+User = get_user_model()

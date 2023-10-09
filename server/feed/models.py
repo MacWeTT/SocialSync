@@ -61,24 +61,24 @@ class Comment(Base):
         return self.text
 
 
-# class Notification(Base):
-#     NOTIFICATION_TYPES = (
-#         ("L", "Like"),
-#         ("C", "Comment"),
-#         ("F", "Follow"),
-#     )
-#     post = models.ForeignKey(
-#         Post, related_name="notifications", on_delete=models.CASCADE, null=True
-#     )
-#     user = models.ForeignKey(
-#         User, related_name="notifications", on_delete=models.CASCADE
-#     )
-#     sender = models.ForeignKey(
-#         User, related_name="sent_notifications", on_delete=models.CASCADE
-#     )
-#     notification_type = models.CharField(max_length=1, choices=NOTIFICATION_TYPES)
-#     text_preview = models.CharField(max_length=255)
-#     is_read = models.BooleanField(default=False)
+class Notification(Base):
+    user = models.ForeignKey(
+        User, related_name="notifications", on_delete=models.CASCADE
+    )
+    is_read = models.BooleanField(default=False)
 
-#     def __str__(self):
-#         return self.text_preview
+    # Define choices for the notification type (e.g., follow, like, comment)
+    NOTIFICATION_TYPES = (
+        ("follow", "Follow"),
+        ("like", "Like"),
+        ("comment", "Comment"),
+    )
+    notification_type = models.CharField(max_length=10, choices=NOTIFICATION_TYPES)
+    title = models.CharField(max_length=255, blank=True, null=True)
+    content = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.notification_type} on {self.title}"
+
+    class Meta:
+        ordering = ["-created_at"]

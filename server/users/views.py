@@ -1,4 +1,5 @@
 from rest_framework import status
+from rest_framework import viewsets
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.exceptions import ValidationError
@@ -6,6 +7,12 @@ from rest_framework.exceptions import ValidationError
 # Services
 from .services.google import verifyGoogleUser
 from .services.jwt import jwtLogin
+
+# Miscallaneous
+from .serializers import UserSerializer
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 
 class GoogleLoginSignupView(APIView):
@@ -26,3 +33,13 @@ class GoogleLoginSignupView(APIView):
             raise ValidationError("Google user doesn't exist.")
 
         return Response(tokens, status=status.HTTP_200_OK)
+
+
+class UserViewSet(viewsets.ReadOnlyModelViewSet):
+    """
+    A viewset for viewing users, and retrieving a user by username.
+    """
+
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+    lookup_field = "username"

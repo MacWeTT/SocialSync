@@ -1,1 +1,3 @@
+from .views import *
+
 urlpatterns = []
