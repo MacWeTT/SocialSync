@@ -1,10 +1,7 @@
 import { StrictMode } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom/client";
-
-import { ChakraProvider, CSSReset } from "@chakra-ui/react";
-import theme from "./common/theme/theme";
-
+import { ThemeProvider } from "./utils/ThemeContext";
 //Redux
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
@@ -21,9 +18,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <StrictMode>
-    <Provider store={store}>
-      <ChakraProvider theme={theme}>
-        <CSSReset />
+    <ThemeProvider>
+      <Provider store={store}>
         <Router>
           <Layout>
             <Routes>
@@ -32,7 +28,7 @@ root.render(
             </Routes>
           </Layout>
         </Router>
-      </ChakraProvider>
-    </Provider>
+      </Provider>
+    </ThemeProvider>
   </StrictMode>
 );

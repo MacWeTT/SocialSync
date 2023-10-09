@@ -1,7 +1,12 @@
 import { extendTheme } from "@chakra-ui/react";
-import { colors } from "./colors";
+import { lightColors, darkColors } from "./colors";
 
-const theme = extendTheme({
-  colors,
+const darkTheme = extendTheme({
+  darkColors,
 });
-export default theme;
+
+const lightTheme = extendTheme({
+  lightColors,
+});
+
+export { darkTheme, lightTheme };
