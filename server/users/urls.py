@@ -1,8 +1,7 @@
-from django.urls import path
-from .views import GoogleLoginSignupView, UserViewSet
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-
+from .views import GoogleLoginSignupView, UserViewSet
 from rest_framework.routers import DefaultRouter
+from django.urls import path
 
 router = DefaultRouter()
 router.register("all", UserViewSet, basename="users")

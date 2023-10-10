@@ -1,10 +1,10 @@
+import { Box } from "@chakra-ui/react";
+
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        <span className="text-muted">Place sticky footer content here.</span>
-      </div>
-    </footer>
+    <Box as="footer" backgroundColor="gray.200" p={4} width="100%">
+      Footer
+    </Box>
   );
 };
 

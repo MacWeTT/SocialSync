@@ -4,7 +4,7 @@ import { User, JWT } from "../../common/types/user";
 
 //Guest User
 const GuestUser: User = {
-  pk: 0,
+  id: 0,
   username: "Guest",
   email: "guest@localhost",
   name: "Guest",
@@ -25,7 +25,7 @@ const userSlice = createSlice({
     setUser: (state, action) => {
       const decoded: JWT = jwtDecode(action.payload.access);
       state.user = {
-        pk: decoded.user_id,
+        id: decoded.user_id,
         username: decoded.username,
         email: decoded.email,
         name: decoded.name,

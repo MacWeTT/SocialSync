@@ -7,3 +7,8 @@ export interface PostCard {
   title: string;
   content: string;
 }
+
+export interface NavTextProps {
+  text: string;
+  link: string;
+}

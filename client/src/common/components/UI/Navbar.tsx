@@ -5,9 +5,9 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div>
-      <h1>Nav</h1>
-    </div>
+    <nav>
+      <h1>Hello</h1>
+    </nav>
   );
 };
 
