@@ -1,44 +1,49 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import { Flex, IconButton, Text } from "@chakra-ui/react";
+import { Flex, IconButton, ChakraProps } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
-interface Props {
-  text: string;
-  link: string;
+interface Props extends ChakraProps {
+  type: string;
+  link?: string;
   icon: ReactNode;
+  action?: () => void;
+  props?: ChakraProps;
 }
 
-const NavItem = ({ text, link, icon }: Props) => {
+const NavItem = ({ type, link, icon, action, props }: Props) => {
   const pathname = useLocation().pathname;
   const navigate = useNavigate();
-  return (
-    <Flex
-      width="100%"
-      _hover={{ backgroundColor: "gray.300" }}
-      backgroundColor={pathname === link ? "gray.300" : "transparent"}
-      borderRadius="md"
-      p={2}
-      transition={"background-color 0.4s ease"}
-      alignItems="center"
-      cursor={"pointer"}
-      onClick={() => {
-        navigate(link);
-      }}
-    >
-      <IconButton aria-label="Home" fontSize={24}>
-        {icon}
-      </IconButton>
-      <Text
-        fontSize="lg"
-        fontWeight={500}
-        alignSelf="center"
-        cursor={"pointer"}
-        pl={4}
-      >
-        {text}
-      </Text>
-    </Flex>
-  );
+  switch (type) {
+    case "link":
+      return (
+        <Flex
+          width="100%"
+          _hover={{ backgroundColor: "gray.300" }}
+          backgroundColor={pathname === link ? "gray.300" : "transparent"}
+          borderRadius="md"
+          p={2}
+          transition={"background-color 0.4s ease"}
+          alignItems="center"
+          cursor={"pointer"}
+          onClick={() => {
+            if (link) navigate(link);
+          }}
+          {...props}
+        >
+          <IconButton aria-label="Home" fontSize={24}>
+            {icon}
+          </IconButton>
+        </Flex>
+      );
+    case "button":
+      return (
+        <IconButton aria-label="Home" fontSize={24} onClick={action} {...props}>
+          {icon}
+        </IconButton>
+      );
+    default:
+      return null;
+  }
 };
 
 export default NavItem;

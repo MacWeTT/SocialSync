@@ -15,6 +15,7 @@ import NotFound from "./pages/NotFound";
 import Layout from "./common/components/UI/Layout/Layout";
 import { ThemeProvider } from "./utils/ThemeContext";
 import { GoogleOAuthProvider } from "@react-oauth/google";
+import "./styles/index.css";
 
 const googleClientID = process.env.REACT_APP_GOOGLE_OAUTH2_CLIENT_ID!;
 
