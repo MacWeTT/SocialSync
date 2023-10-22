@@ -1,11 +1,6 @@
-import {
-  ReactNode,
-  useContext,
-  //  useEffect
-} from "react";
-// import { useGoogleOneTapLogin } from "@react-oauth/google";
+import { ReactNode, useContext } from "react";
 import Navbar from "../Navbar";
-import Sidebar from "../../Sidebar/Sidebar";
+import Sidebar from "../Sidebar/Sidebar";
 import Footer from "../Footer";
 
 //Theme
@@ -13,29 +8,29 @@ import { Box, ChakraProvider, CSSReset, Flex } from "@chakra-ui/react";
 import { darkTheme, lightTheme } from "../../../theme/theme";
 import { ThemeContext } from "../../../../utils/ThemeContext";
 
-//Redux
-// import { useSelector } from "react-redux";
-// import { RootState } from "../../../../redux/store";
-
 interface Props {
   children: ReactNode;
 }
 
 const Layout = ({ children }: Props) => {
   const darkMode = useContext(ThemeContext);
-  // const user = useSelector((state: RootState) => state.user);
 
   return (
     <ChakraProvider theme={darkMode ? lightTheme : darkTheme}>
       <CSSReset />
-      <Flex direction="column" minHeight="100vh">
-        <Navbar />
-        <Box ml="80px">
-          <Sidebar />
+      <Flex minHeight="100vh">
+        <Sidebar />
+        <Box
+          marginLeft="230px"
+          minWidth="calc(100% - 230px)"
+          borderLeft="2px"
+          borderColor="gray.200"
+        >
+          <Navbar />
           {children}
         </Box>
-        <Footer />
       </Flex>
+      <Footer />
     </ChakraProvider>
   );
 };

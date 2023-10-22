@@ -19,17 +19,12 @@ const Sidebar = () => {
     <Box
       width={open ? "230px" : "80px"}
       backgroundColor="gray.200"
-      boxShadow="xl"
-      rounded={"md"}
       py={8}
       px={5}
-      onMouseOver={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-      transition={"width 0.5s ease"}
+      pr={open ? 5 : 1}
+      transition={"0.5s ease"}
       position="fixed"
-      top="0"
-      left="0"
-      bottom="0"
+      height="100vh"
       zIndex="1000"
       overflow="hidden"
     >
@@ -51,7 +46,11 @@ const Sidebar = () => {
           <NavItem text="Profile" link="/profile" icon={<AiOutlineUser />} />
           <NavItem text="Settings" link="/settings" icon={<FiSettings />} />
         </VStack>
-        <IconButton aria-label="More" fontSize={24}>
+        <IconButton
+          aria-label="More"
+          fontSize={24}
+          onClick={() => setOpen(!open)}
+        >
           {open ? <HiOutlineChevronLeft /> : <HiOutlineChevronRight />}
         </IconButton>
       </Flex>

@@ -13,6 +13,7 @@ const NavItem = ({ text, link, icon }: Props) => {
   const navigate = useNavigate();
   return (
     <Flex
+      width="100%"
       _hover={{ backgroundColor: "gray.300" }}
       backgroundColor={pathname === link ? "gray.300" : "transparent"}
       borderRadius="md"

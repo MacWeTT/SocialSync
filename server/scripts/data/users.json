@@ -1,0 +1,82 @@
+[
+  {
+    "first_name": "Dummy",
+    "last_name": "User1",
+    "username": "dummyuser1",
+    "password": "DummYUser@1",
+    "email": "dummyuser1@gmail.com",
+    "bio": "Hey! This is dummy user 1."
+  },
+  {
+    "first_name": "Dummy",
+    "last_name": "User2",
+    "username": "dummyuser2",
+    "password": "DummYUser@2",
+    "email": "dummyuser2@gmail.com",
+    "bio": "Hey! This is dummy user 2."
+  },
+  {
+    "first_name": "Dummy",
+    "last_name": "User3",
+    "username": "dummyuser3",
+    "password": "DummYUser@3",
+    "email": "dummyuser3@gmail.com",
+    "bio": "Hey! This is dummy user 3."
+  },
+  {
+    "first_name": "Dummy",
+    "last_name": "User4",
+    "username": "dummyuser4",
+    "password": "DummYUser@4",
+    "email": "dummyuser4@gmail.com",
+    "bio": "Hey! This is dummy user 4."
+  },
+  {
+    "first_name": "Dummy",
+    "last_name": "User5",
+    "username": "dummyuser5",
+    "password": "DummYUser@5",
+    "email": "dummyuser5@gmail.com",
+    "bio": "Hey! This is dummy user 5."
+  },
+  {
+    "first_name": "Dummy",
+    "last_name": "User6",
+    "username": "dummyuser6",
+    "password": "DummYUser@6",
+    "email": "dummyuser6@gmail.com",
+    "bio": "Hey! This is dummy user 6."
+  },
+  {
+    "first_name": "Dummy",
+    "last_name": "User7",
+    "username": "dummyuser7",
+    "password": "DummYUser@7",
+    "email": "dummyuser7@gmail.com",
+    "bio": "Hey! This is dummy user 7."
+  },
+  {
+    "first_name": "Dummy",
+    "last_name": "User8",
+    "username": "dummyuser8",
+    "password": "DummYUser@8",
+    "email": "dummyuser8@gmail.com",
+    "bio": "Hey! This is dummy user 8."
+  },
+  {
+    "first_name": "Dummy",
+    "last_name": "User9",
+    "username": "dummyuser9",
+    "password": "DummYUser@9",
+    "email": "dummyuser9@gmail.com",
+    "bio": "Hey! This is dummy user 9."
+  },
+  {
+    "first_name": "Dummy",
+    "last_name": "User10",
+    "username": "dummyuser10",
+    "password": "DummYUser@10",
+    "email": "dummyuser10@gmail.com",
+    "bio": "Hey! This is dummy user 10."
+  }
+]
