@@ -5,7 +5,9 @@ import uuid
 
 class User(AbstractUser):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    avatar = models.ImageField(upload_to="avatars/", null=True, blank=True)
+    avatar = models.ImageField(
+        upload_to="avatars/", null=True, blank=True, default="avatars/default.jpg"
+    )
     bio = models.TextField(null=True, blank=True)
     # add roles
     verified = models.BooleanField(default=False)

@@ -9,7 +9,7 @@ User = get_user_model()
 class CreateUsers(BaseCommand):
     help = "Creates dummy users"
 
-    def handle(self, *args, **kwargs):
+    def handle(self, *args, **options) -> None:
         self.stdout.write(
             self.style.NOTICE("Creating dummy users. This may take a while...")
         )

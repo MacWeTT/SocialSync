@@ -49,6 +49,10 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+PROJECT_MIDDLEWARE = [
+    "socialsync.middleware.auth.AuthMiddleware",
+]
+
 # OAUTH2
 GOOGLE_OAUTH2_CLIENT_ID = os.environ.get("GOOGLE_OAUTH2_CLIENT_ID")
 GOOGLE_OAUTH2_CLIENT_SECRET = os.environ.get("GOOGLE_OAUTH2_CLIENT_SECRET")
@@ -68,7 +72,7 @@ SIMPLE_JWT = {
     "REFRESH_TOKEN_LIFETIME": timedelta(days=10),
     "SIGNING_KEY": os.environ.get("SECRET_KEY"),
     "AUTH_HEADER_TYPES": ("Bearer",),
-    # "TOKEN_OBTAIN_SERIALIZER": "users.utils.serializers.TokenObtainPairSerializer",
+    # "TOKEN_OBTAIN_SERIALIZER": "users.services.serializers.TokenObtainPairSerializer",
 }
 
 ROOT_URLCONF = "socialsync.urls"
@@ -135,3 +139,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Combine all applications
 INSTALLED_APPS += PROJECT_APPS
 INSTALLED_APPS += EXTERNAL_APPS
+
+# Combine all middlewares
+MIDDLEWARE += PROJECT_MIDDLEWARE

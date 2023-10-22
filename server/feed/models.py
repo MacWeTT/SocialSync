@@ -24,6 +24,9 @@ class Community(Base):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name_plural = "Communities"
+
 
 class Post(Base):
     community = models.ForeignKey(
@@ -37,13 +40,13 @@ class Post(Base):
     def __str__(self):
         return self.title
 
-    def getLikes(self):
-        return self.likes.count()
+    def getVotes(self):
+        return self.votes.count()
 
 
-class Like(Base):
-    post = models.ForeignKey(Post, related_name="likes", on_delete=models.CASCADE)
-    author = models.ForeignKey(User, related_name="likes", on_delete=models.CASCADE)
+class Vote(Base):
+    post = models.ForeignKey(Post, related_name="Vote", on_delete=models.CASCADE)
+    author = models.ForeignKey(User, related_name="Votes", on_delete=models.CASCADE)
 
     def __str__(self):
         return self.post.title
@@ -70,7 +73,7 @@ class Notification(Base):
     # Define choices for the notification type (e.g., follow, like, comment)
     NOTIFICATION_TYPES = (
         ("follow", "Follow"),
-        ("like", "Like"),
+        ("vote", "Vote"),
         ("comment", "Comment"),
     )
     notification_type = models.CharField(max_length=10, choices=NOTIFICATION_TYPES)

@@ -1,5 +1,6 @@
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+from users.models import User
 
 
 def jwtObtainPairSerializer() -> TokenObtainPairSerializer:
@@ -9,7 +10,7 @@ def jwtObtainPairSerializer() -> TokenObtainPairSerializer:
 
     class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
         @classmethod
-        def get_token(cls, user):
+        def get_token(cls, user: User):
             token = super().get_token(user)
 
             # Custom Claims
@@ -23,7 +24,7 @@ def jwtObtainPairSerializer() -> TokenObtainPairSerializer:
     return CustomTokenObtainPairSerializer
 
 
-def jwtLogin(user) -> dict:
+def jwtLogin(user: User) -> dict:
     """
     A customized version of obtaining `JSON Web Tokens`.
 

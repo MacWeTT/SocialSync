@@ -5,7 +5,11 @@
     "username": "dummyuser1",
     "password": "DummYUser@1",
     "email": "dummyuser1@gmail.com",
-    "bio": "Hey! This is dummy user 1."
+    "bio": "Hey! This is dummy user 1.",
+    "connections": {
+      "followers": ["dummyuser2", "dummyuser3", "dummyuser4"],
+      "following": ["dummyuser6", "dummyuser7", "dummyuser8"]
+    }
   },
   {
     "first_name": "Dummy",
@@ -13,7 +17,11 @@
     "username": "dummyuser2",
     "password": "DummYUser@2",
     "email": "dummyuser2@gmail.com",
-    "bio": "Hey! This is dummy user 2."
+    "bio": "Hey! This is dummy user 2.",
+    "connections": {
+      "followers": ["dummyuser1", "dummyuser3", "dummyuser5"],
+      "following": ["dummyuser4", "dummyuser6", "dummyuser8"]
+    }
   },
   {
     "first_name": "Dummy",
@@ -21,7 +29,11 @@
     "username": "dummyuser3",
     "password": "DummYUser@3",
     "email": "dummyuser3@gmail.com",
-    "bio": "Hey! This is dummy user 3."
+    "bio": "Hey! This is dummy user 3.",
+    "connections": {
+      "followers": ["dummyuser1", "dummyuser2", "dummyuser5"],
+      "following": ["dummyuser6", "dummyuser7", "dummyuser9"]
+    }
   },
   {
     "first_name": "Dummy",
@@ -29,7 +41,11 @@
     "username": "dummyuser4",
     "password": "DummYUser@4",
     "email": "dummyuser4@gmail.com",
-    "bio": "Hey! This is dummy user 4."
+    "bio": "Hey! This is dummy user 4.",
+    "connections": {
+      "followers": ["dummyuser1", "dummyuser3", "dummyuser6"],
+      "following": ["dummyuser2", "dummyuser5", "dummyuser7"]
+    }
   },
   {
     "first_name": "Dummy",
@@ -37,7 +53,11 @@
     "username": "dummyuser5",
     "password": "DummYUser@5",
     "email": "dummyuser5@gmail.com",
-    "bio": "Hey! This is dummy user 5."
+    "bio": "Hey! This is dummy user 5.",
+    "connections": {
+      "followers": ["dummyuser2", "dummyuser3", "dummyuser7"],
+      "following": ["dummyuser1", "dummyuser4", "dummyuser10"]
+    }
   },
   {
     "first_name": "Dummy",
@@ -45,7 +65,11 @@
     "username": "dummyuser6",
     "password": "DummYUser@6",
     "email": "dummyuser6@gmail.com",
-    "bio": "Hey! This is dummy user 6."
+    "bio": "Hey! This is dummy user 6.",
+    "connections": {
+      "followers": ["dummyuser4", "dummyuser5", "dummyuser8"],
+      "following": ["dummyuser1", "dummyuser3", "dummyuser9"]
+    }
   },
   {
     "first_name": "Dummy",
@@ -53,7 +77,11 @@
     "username": "dummyuser7",
     "password": "DummYUser@7",
     "email": "dummyuser7@gmail.com",
-    "bio": "Hey! This is dummy user 7."
+    "bio": "Hey! This is dummy user 7.",
+    "connections": {
+      "followers": ["dummyuser1", "dummyuser5", "dummyuser9"],
+      "following": ["dummyuser2", "dummyuser4", "dummyuser8"]
+    }
   },
   {
     "first_name": "Dummy",
@@ -61,7 +89,11 @@
     "username": "dummyuser8",
     "password": "DummYUser@8",
     "email": "dummyuser8@gmail.com",
-    "bio": "Hey! This is dummy user 8."
+    "bio": "Hey! This is dummy user 8.",
+    "connections": {
+      "followers": ["dummyuser6", "dummyuser7", "dummyuser9"],
+      "following": ["dummyuser1", "dummyuser2", "dummyuser5"]
+    }
   },
   {
     "first_name": "Dummy",
@@ -69,7 +101,11 @@
     "username": "dummyuser9",
     "password": "DummYUser@9",
     "email": "dummyuser9@gmail.com",
-    "bio": "Hey! This is dummy user 9."
+    "bio": "Hey! This is dummy user 9.",
+    "connections": {
+      "followers": ["dummyuser3", "dummyuser6", "dummyuser8"],
+      "following": ["dummyuser1", "dummyuser2", "dummyuser7"]
+    }
   },
   {
     "first_name": "Dummy",
@@ -77,6 +113,10 @@
     "username": "dummyuser10",
     "password": "DummYUser@10",
     "email": "dummyuser10@gmail.com",
-    "bio": "Hey! This is dummy user 10."
+    "bio": "Hey! This is dummy user 10.",
+    "connections": {
+      "followers": ["dummyuser2", "dummyuser4", "dummyuser8"],
+      "following": ["dummyuser1", "dummyuser5", "dummyuser9"]
+    }
   }
 ]
