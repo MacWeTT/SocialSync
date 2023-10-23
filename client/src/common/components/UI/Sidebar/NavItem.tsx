@@ -1,5 +1,5 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import { Flex, IconButton, ChakraProps } from "@chakra-ui/react";
+import { IconButton, ChakraProps } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 interface Props extends ChakraProps {
@@ -16,24 +16,17 @@ const NavItem = ({ type, link, icon, action, props }: Props) => {
   switch (type) {
     case "link":
       return (
-        <Flex
-          width="100%"
-          _hover={{ backgroundColor: "gray.300" }}
-          backgroundColor={pathname === link ? "gray.300" : "transparent"}
-          borderRadius="md"
-          p={2}
-          transition={"background-color 0.4s ease"}
-          alignItems="center"
-          cursor={"pointer"}
+        <IconButton
+          className="sidebar-btn"
           onClick={() => {
             if (link) navigate(link);
           }}
-          {...props}
+          aria-label="Home"
+          fontSize={24}
+          backgroundColor={pathname === link ? "gray.600" : "transparent"}
         >
-          <IconButton aria-label="Home" fontSize={24}>
-            {icon}
-          </IconButton>
-        </Flex>
+          {icon}
+        </IconButton>
       );
     case "button":
       return (

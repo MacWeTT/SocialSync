@@ -1,4 +1,4 @@
-import { ReactNode, useContext } from "react";
+import { ReactNode } from "react";
 import Navbar from "../Navbar";
 import PageWrapper from "../PageWrapper";
 import Sidebar from "../Sidebar/Sidebar";
@@ -6,18 +6,19 @@ import Footer from "../Footer";
 
 //Theme
 import { ChakraProvider, CSSReset } from "@chakra-ui/react";
-import { darkTheme, lightTheme } from "../../../theme/theme";
-import { ThemeContext } from "../../../../utils/ThemeContext";
+// import { ColorModeScript } from "@chakra-ui/react";
+import theme from "../../../theme/theme";
+//CSS Files
+import "../../styles/navbar.css";
+import "../../styles/sidebar.css";
 
 interface Props {
   children: ReactNode;
 }
 
 const Layout = ({ children }: Props) => {
-  const { darkMode } = useContext(ThemeContext)!;
-
   return (
-    <ChakraProvider theme={darkMode ? lightTheme : darkTheme}>
+    <ChakraProvider theme={theme}>
       <CSSReset />
       <Sidebar />
       <PageWrapper>

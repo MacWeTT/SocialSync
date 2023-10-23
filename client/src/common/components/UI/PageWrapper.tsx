@@ -11,7 +11,7 @@ const PageWrapper = ({ children }: Props) => {
       position="relative"
       minHeight="100vh"
       mx="auto"
-      maxWidth="1200px"
+      maxWidth="900px"
     >
       {children}
     </Flex>
