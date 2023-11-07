@@ -7,7 +7,7 @@ import {
 import { RootState } from "../store";
 import { logout } from "../reducers/userSlice";
 
-const BASEURL = process.env.REACT_APP_PUBLIC_BACKEND_URL!;
+const BASEURL = process.env.REACT_APP_BACKEND_URL!;
 
 const baseQuery = fetchBaseQuery({
   baseUrl: `${BASEURL}/users/`,
@@ -28,7 +28,7 @@ const reAuthBaseQuery: BaseQueryFn<
   if ((result.error?.data as any)?.message === "You are not logged in") {
     try {
       const refreshResult = await baseQuery(
-        { credentials: "include", url: "auth/refresh" },
+        { credentials: "include", url: "login/refresh" },
         api,
         extraOptions
       );

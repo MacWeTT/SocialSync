@@ -4,15 +4,21 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.exceptions import ValidationError
 
+from rest_framework_simplejwt.views import TokenObtainPairView
+
 # Services
 from .services.google import verifyGoogleUser
-from .services.jwt import jwtLogin
+from .services.jwt import jwtLogin, CustomTokenObtainPairSerializer
 
 # Miscallaneous
 from .serializers import UserSerializer
 from django.contrib.auth import get_user_model
 
 User = get_user_model()
+
+
+class LoginAPIView(TokenObtainPairView):
+    serializer_class = CustomTokenObtainPairSerializer
 
 
 class GoogleLoginSignupView(APIView):

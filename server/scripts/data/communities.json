@@ -1,44 +1,74 @@
 {
   "communities": [
     {
-      "name": "Community 1",
-      "description": "This is the first community"
+      "name": "BMW",
+      "description": "This community is dedicated to everything related to BMW vehicles, tuning, racing, and more.",
+      "admins": [],
+      "members": [],
+      "banner": ""
     },
     {
-      "name": "Community 2",
-      "description": "This is the second community"
+      "name": "McLaren",
+      "description": "The McLaren Automotive community! From the F1 to the Artura, post your pics, questions, and experiences with McLaren.",
+      "admins": [],
+      "members": [],
+      "banner": ""
     },
     {
-      "name": "Community 3",
-      "description": "This is the third community"
+      "name": "Space",
+      "description": "Share & discuss informative content on: * Astrophysics * Cosmology * Space Exploration * Planetary Science * Astrobiology",
+      "admins": [],
+      "members": [],
+      "banner": ""
     },
     {
-      "name": "Community 4",
-      "description": "This is the fourth community"
+      "name": "Minecraft",
+      "description": "Minecraft community on reddit",
+      "admins": [],
+      "members": [],
+      "banner": ""
     },
     {
-      "name": "Community 5",
-      "description": "This is the fifth community"
+      "name": "GTA",
+      "description": "SocialSync's premier GTA community",
+      "admins": [],
+      "members": [],
+      "banner": ""
     },
     {
       "name": "Community 6",
-      "description": "This is the sixth community"
+      "description": "This is the sixth community",
+      "admins": [],
+      "members": [],
+      "banner": ""
     },
     {
       "name": "Community 7",
-      "description": "This is the seventh community"
+      "description": "This is the seventh community",
+      "admins": [],
+      "members": [],
+      "banner": ""
     },
     {
       "name": "Community 8",
-      "description": "This is the eighth community"
+      "description": "This is the eighth community",
+      "admins": [],
+      "members": [],
+      "banner": ""
     },
     {
       "name": "Community 9",
-      "description": "This is the ninth community"
+      "description": "This is the ninth community",
+      "admins": [],
+      "members": [],
+      "banner": ""
     },
     {
       "name": "Community 10",
-      "description": "This is the tenth community"
+      "description": "This is the tenth community",
+      "admins": [],
+      "members": [],
+      "banner": ""
     }
   ]
 }
