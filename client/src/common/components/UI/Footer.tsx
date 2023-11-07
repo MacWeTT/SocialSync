@@ -10,7 +10,7 @@ const Footer = () => {
       width="calc(100% - 32px)"
       borderRadius="md"
     >
-      <Flex justifyContent="center" color="white">
+      <Flex justifyContent="center">
         <Box>© 2023</Box>
         <Box ml={2}>Made by MacWeTT (a.k.a. Manas Bajpai)</Box>
       </Flex>

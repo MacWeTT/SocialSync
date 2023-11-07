@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Flex, Text } from "@chakra-ui/react";
 import NavItem from "./Sidebar/NavItem";
 
@@ -8,7 +9,7 @@ const Navbar = () => {
   return (
     <Flex className="nav" as="nav" backgroundColor="primary">
       <Text as="h1" className="nav-logo">
-        SocialSync
+        <Link to="/">SocialSync</Link>
       </Text>
       <Flex justifyContent="flex-end" alignItems="center" className="nav-links">
         <NavItem type="link" link="/search" icon={<AiOutlineSearch />} />

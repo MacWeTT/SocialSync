@@ -12,8 +12,8 @@ const Router = () => {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path="/" element={<HomeRouter />} />
-          <Route path="/auth" element={<AuthRouter />} />
+          <Route path="/*" element={<HomeRouter />} />
+          <Route path="/auth/*" element={<AuthRouter />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

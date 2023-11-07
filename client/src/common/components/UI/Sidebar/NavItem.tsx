@@ -21,9 +21,9 @@ const NavItem = ({ type, link, icon, action, props }: Props) => {
           onClick={() => {
             if (link) navigate(link);
           }}
-          aria-label="Home"
+          aria-label={`${link}`}
           fontSize={24}
-          backgroundColor={pathname === link ? "gray.600" : "transparent"}
+          backgroundColor={pathname === link ? "gray.300" : "transparent"}
         >
           {icon}
         </IconButton>
