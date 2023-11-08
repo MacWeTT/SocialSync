@@ -70,7 +70,7 @@ REST_FRAMEWORK = {
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=10),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=10),
-    "SIGNING_KEY": os.environ.get("SECRET_KEY"),
+    "SIGNING_KEY": SECRET_KEY,
     "AUTH_HEADER_TYPES": ("Bearer",),
     # "TOKEN_OBTAIN_SERIALIZER": "users.services.serializers.TokenObtainPairSerializer",
 }

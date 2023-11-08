@@ -1,0 +1,35 @@
+/* Navbar */
+.nav {
+  @apply py-2 my-2 rounded-md justify-between items-center w-screen flex-col;
+}
+
+.nav-box {
+  @apply w-[720px] justify-between items-center;
+}
+
+.nav-logo {
+  @apply ml-4 text-2xl font-semibold;
+}
+
+/* Sidebar */
+.sidebar {
+  @apply hidden lg:block absolute py-4 px-2 ml-6 rounded-md top-1/2 transition-all duration-500 ease-in-out left-0 transform -translate-y-1/2 z-50 overflow-hidden border-2;
+}
+
+.sidebar-btn {
+  @apply mx-2 rounded-md items-center cursor-pointer border-2;
+}
+
+.sidebar-tray {
+  @apply z-50 block lg:hidden fixed bottom-0 w-full;
+}
+
+/* Footer */
+.footer {
+  @apply p-4 my-2 w-screen rounded-md;
+}
+
+/* Utilities */
+/* .page-wrapper{
+  height: calc(100% - 112px);
+} */

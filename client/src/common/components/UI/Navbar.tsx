@@ -8,12 +8,18 @@ import { AiOutlineSearch } from "react-icons/ai";
 const Navbar = () => {
   return (
     <Flex className="nav" as="nav" backgroundColor="primary">
-      <Text as="h1" className="nav-logo">
-        <Link to="/">SocialSync</Link>
-      </Text>
-      <Flex justifyContent="flex-end" alignItems="center" className="nav-links">
-        <NavItem type="link" link="/search" icon={<AiOutlineSearch />} />
-        <NavItem type="link" link="/messages" icon={<BiMessageDetail />} />
+      <Flex className="nav-box">
+        <Text as="h1" className="nav-logo">
+          <Link to="/">SocialSync</Link>
+        </Text>
+        <Flex
+          justifyContent="flex-end"
+          alignItems="center"
+          className="nav-links"
+        >
+          <NavItem type="link" link="/search" icon={<AiOutlineSearch />} />
+          <NavItem type="link" link="/messages" icon={<BiMessageDetail />} />
+        </Flex>
       </Flex>
     </Flex>
   );

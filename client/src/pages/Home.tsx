@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <main>
       {data.map((post) => (
-        <PostCard data={post} />
+        <PostCard data={post} key={post.id} />
       ))}
     </main>
   );

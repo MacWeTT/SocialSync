@@ -1,7 +1,0 @@
-.nav {
-  @apply py-2 my-2 rounded-md justify-between items-center;
-}
-
-.nav-logo {
-  @apply ml-4 text-2xl font-semibold;
-}

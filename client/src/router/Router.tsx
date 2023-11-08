@@ -4,7 +4,6 @@ import Layout from "../common/components/UI/Layout/Layout";
 //Routers
 import HomeRouter from "./HomeRouter";
 import AuthRouter from "./AuthRouter";
-
 import NotFound from "../pages/NotFound";
 
 const Router = () => {
