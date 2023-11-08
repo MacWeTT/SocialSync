@@ -1,0 +1,35 @@
+nav {
+  @apply flex justify-evenly p-4 bg-primary text-white box-border items-center;
+}
+
+.community-tab {
+  @apply flex justify-evenly items-center rounded-sm p-2 -m-2 w-60 hover:border-2;
+}
+
+.search-bar-container {
+  @apply flex-grow mx-4 relative text-black;
+}
+
+.search-bar-icon {
+  @apply absolute top-0 left-0 h-full w-10 flex items-center justify-center;
+}
+
+.search-bar {
+  @apply w-full h-10 rounded-full bg-white flex items-center px-4 pl-10;
+}
+
+.nav-links {
+  @apply flex gap-4 text-2xl items-center;
+}
+
+.nav-link {
+  @apply hover:text-tertiary cursor-pointer transition-all duration-300 ease-in-out;
+}
+
+.nav-profile_tab {
+  @apply flex justify-evenly items-center rounded-sm border-2 p-2 -m-2;
+}
+
+.nav-profile_tab-img {
+  @apply mr-4;
+}

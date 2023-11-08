@@ -28,7 +28,7 @@ import {
 } from "@chakra-ui/react";
 
 // Custom Components
-import CustomButton from "../../common/components/UI/CustomButton";
+import CustomButton from "../../common/components/CustomButton";
 
 //Misc Imports
 import { BsGoogle, BsEyeFill, BsEyeSlashFill } from "react-icons/bs";

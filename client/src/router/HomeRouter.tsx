@@ -10,7 +10,7 @@ import Settings from "../pages/Settings";
 import Search from "../pages/Search";
 import Messages from "../pages/Messages";
 
-import Layout from "../common/components/UI/Layout/Layout";
+import Layout from "../common/components/Layout";
 
 const HomeRouter = () => {
   return (
