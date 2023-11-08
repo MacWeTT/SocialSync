@@ -10,10 +10,10 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <>
+    <div className="h-screen overflow-y-hidden">
       <Navbar />
       <main className="container mx-auto">{children}</main>
-    </>
+    </div>
   );
 };
 

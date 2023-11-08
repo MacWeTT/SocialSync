@@ -3,7 +3,7 @@ import Masonry from "react-masonry-css";
 
 const Home = () => {
   return (
-    <main className="flex justify-between ml-8 overflow-y-scroll h-screen">
+    <main className="flex justify-between ml-8 overflow-y-scroll">
       <div className="masonry-container">
         <Masonry
           breakpointCols={2}

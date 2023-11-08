@@ -27,7 +27,7 @@ nav {
 }
 
 .nav-profile_tab {
-  @apply flex justify-evenly items-center rounded-sm border-2 p-2 -m-2;
+  @apply flex justify-evenly items-center rounded-sm border-transparent hover:border-white border-[1px] p-2 -my-2 mx-4;
 }
 
 .nav-profile_tab-img {
