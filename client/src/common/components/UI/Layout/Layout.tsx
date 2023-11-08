@@ -1,11 +1,7 @@
 import { ReactNode } from "react";
-import Navbar from "../Navbar";
+// import Navbar from "../Navbar";
 import Sidebar from "../Sidebar/Sidebar";
 import PageWrapper from "../PageWrapper";
-
-//Theme
-import { ChakraProvider, CSSReset } from "@chakra-ui/react";
-import theme from "../../../theme/theme";
 
 //CSS Files
 import "../../../../styles/index.css";
@@ -18,12 +14,11 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <ChakraProvider theme={theme}>
-      <CSSReset />
+    <main className="grid lg:grid-cols-6">
       <Sidebar />
-      <Navbar />
+      {/* <Navbar /> */}
       <PageWrapper>{children}</PageWrapper>
-    </ChakraProvider>
+    </main>
   );
 };
 

@@ -1,62 +1,82 @@
 [
   {
+    "id": 1,
     "community": "BMW",
-    "name": "M3 GTR - A class in itself.",
+    "caption": "M3 GTR - A class in itself.",
     "author": "dummyuser1",
-    "image": "https://via.placeholder.com/150x150"
+    "image": "https://via.placeholder.com/250x250",
+    "votes": 10
   },
   {
+    "id": 2,
     "community": "Tesla",
-    "name": "Model S - The future of driving.",
+    "caption": "Model S - The future of driving.",
     "author": "dummyuser2",
-    "image": "https://via.placeholder.com/150x150"
+    "image": "https://via.placeholder.com/250x250",
+    "votes": 5
   },
   {
+    "id": 3,
     "community": "Apple",
-    "name": "iPhone 13 - The best iPhone yet.",
+    "caption": "iPhone 13 - The best iPhone yet.",
     "author": "dummyuser3",
-    "image": "https://via.placeholder.com/150x150"
+    "image": "https://via.placeholder.com/250x250",
+    "votes": 20
   },
   {
+    "id": 4,
     "community": "Google",
-    "name": "Pixel 6 - The ultimate Android phone.",
+    "caption": "Pixel 6 - The ultimate Android phone.",
     "author": "dummyuser4",
-    "image": "https://via.placeholder.com/150x150"
+    "image": "https://via.placeholder.com/250x250",
+    "votes": 15
   },
   {
+    "id": 5,
     "community": "Microsoft",
-    "name": "Surface Laptop 4 - The perfect work laptop.",
+    "caption": "Surface Laptop 4 - The perfect work laptop.",
     "author": "dummyuser5",
-    "image": "https://via.placeholder.com/150x150"
+    "image": "https://via.placeholder.com/250x250",
+    "votes": 8
   },
   {
+    "id": 6,
     "community": "Amazon",
-    "name": "Echo Dot - Your personal assistant.",
+    "caption": "Echo Dot - Your personal assistant.",
     "author": "dummyuser6",
-    "image": "https://via.placeholder.com/150x150"
+    "image": "https://via.placeholder.com/250x250",
+    "votes": 12
   },
   {
+    "id": 7,
     "community": "Netflix",
-    "name": "Stranger Things - The ultimate sci-fi series.",
+    "caption": "Stranger Things - The ultimate sci-fi series.",
     "author": "dummyuser7",
-    "image": "https://via.placeholder.com/150x150"
+    "image": "https://via.placeholder.com/250x250",
+    "votes": 3
   },
   {
+    "id": 8,
     "community": "Marvel",
-    "name": "Spider-Man: No Way Home - The most anticipated movie of the year.",
+    "caption": "Spider-Man: No Way Home - The most anticipated movie of the year.",
     "author": "dummyuser8",
-    "image": "https://via.placeholder.com/150x150"
+    "image": "https://via.placeholder.com/250x250",
+    "votes": 18
   },
   {
+    "id": 9,
     "community": "Star Wars",
-    "name": "The Mandalorian - The best Star Wars series yet.",
+    "caption": "The Mandalorian - The best Star Wars series yet.",
     "author": "dummyuser9",
-    "image": "https://via.placeholder.com/150x150"
+    "image": "https://via.placeholder.com/250x250",
+    "votes": 7
   },
   {
+    "id": 10,
     "community": "DC Comics",
-    "name": "The Batman - The dark knight returns.",
+    "caption": "The Batman - The dark knight returns.",
     "author": "dummyuser10",
-    "image": "https://via.placeholder.com/150x150"
+    "image": "https://via.placeholder.com/250x250",
+    "votes": 13
   }
 ]

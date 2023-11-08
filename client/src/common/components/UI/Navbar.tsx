@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import NavItem from "./Sidebar/NavItem";
 
 import { BiMessageDetail } from "react-icons/bi";
@@ -9,9 +8,7 @@ const Navbar = () => {
   return (
     <Flex className="nav" as="nav" backgroundColor="primary">
       <Flex className="nav-box">
-        <Text as="h1" className="nav-logo">
-          <Link to="/">SocialSync</Link>
-        </Text>
+
         <Flex
           justifyContent="flex-end"
           alignItems="center"

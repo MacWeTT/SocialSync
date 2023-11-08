@@ -8,16 +8,20 @@
 }
 
 .nav-logo {
-  @apply ml-4 text-2xl font-semibold;
+  @apply ml-2 mt-4 text-3xl font-semibold;
 }
 
 /* Sidebar */
 .sidebar {
-  @apply hidden lg:block absolute py-4 px-2 ml-6 rounded-md top-1/2 transition-all duration-500 ease-in-out left-0 transform -translate-y-1/2 z-50 overflow-hidden border-2;
+  @apply hidden lg:block h-screen px-2 ml-6 border-r-2 col-span-1;
 }
 
 .sidebar-btn {
-  @apply mx-2 rounded-md items-center cursor-pointer border-2;
+  @apply mx-2 rounded-md items-center cursor-pointer;
+}
+
+.more-btn {
+  @apply mr-4 mx-2 bg-transparent;
 }
 
 .sidebar-tray {
@@ -30,6 +34,42 @@
 }
 
 /* Utilities */
-/* .page-wrapper{
-  height: calc(100% - 112px);
-} */
+.page-wrapper {
+  @apply col-span-5;
+}
+
+.masonry-container {
+  @apply mt-8;
+}
+
+.post-img {
+  @apply w-full h-64 object-cover rounded-md;
+}
+
+.my-masonry-grid {
+  display: -webkit-box;
+  /* Not needed if autoprefixing */
+  display: -ms-flexbox;
+  /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px;
+  /* gutter size offset */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding: 0 30px;
+  /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  /* background: grey; */
+  margin-bottom: 30px;
+}
+
+.post-card {
+  @apply bg-slate-300 rounded-lg p-4 border-2 max-w-sm;
+}

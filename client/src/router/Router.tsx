@@ -1,21 +1,25 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "../common/components/UI/Layout/Layout";
 
 //Routers
 import HomeRouter from "./HomeRouter";
 import AuthRouter from "./AuthRouter";
 import NotFound from "../pages/NotFound";
 
+//Theme
+import { ChakraProvider, CSSReset } from "@chakra-ui/react";
+import theme from "../common/theme/theme";
+
 const Router = () => {
   return (
     <BrowserRouter>
-      <Layout>
+      <ChakraProvider theme={theme}>
+        <CSSReset />
         <Routes>
           <Route path="/*" element={<HomeRouter />} />
           <Route path="/auth/*" element={<AuthRouter />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Layout>
+      </ChakraProvider>
     </BrowserRouter>
   );
 };
