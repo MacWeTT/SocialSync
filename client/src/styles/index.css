@@ -15,6 +15,5 @@
   background-clip: padding-box;
 }
 .my-masonry-grid_column > div {
-  background: grey;
   margin-bottom: 30px;
 }

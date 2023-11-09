@@ -4,7 +4,7 @@
     "community": "BMW",
     "caption": "M3 GTR - A class in itself.",
     "author": "dummyuser1",
-    "image": "https://via.placeholder.com/250x250",
+    "image": "https://via.placeholder.com/400x400",
     "votes": 10
   },
   {
@@ -12,7 +12,7 @@
     "community": "Tesla",
     "caption": "Model S - The future of driving.",
     "author": "dummyuser2",
-    "image": "https://via.placeholder.com/250x250",
+    "image": "https://via.placeholder.com/400x400",
     "votes": 5
   },
   {
@@ -20,7 +20,7 @@
     "community": "Apple",
     "caption": "iPhone 13 - The best iPhone yet.",
     "author": "dummyuser3",
-    "image": "https://via.placeholder.com/250x250",
+    "image": "https://via.placeholder.com/400x400",
     "votes": 20
   },
   {
@@ -28,7 +28,7 @@
     "community": "Google",
     "caption": "Pixel 6 - The ultimate Android phone.",
     "author": "dummyuser4",
-    "image": "https://via.placeholder.com/250x250",
+    "image": "https://via.placeholder.com/400x400",
     "votes": 15
   },
   {
@@ -36,7 +36,7 @@
     "community": "Microsoft",
     "caption": "Surface Laptop 4 - The perfect work laptop.",
     "author": "dummyuser5",
-    "image": "https://via.placeholder.com/250x250",
+    "image": "https://via.placeholder.com/400x400",
     "votes": 8
   },
   {
@@ -44,7 +44,7 @@
     "community": "Amazon",
     "caption": "Echo Dot - Your personal assistant.",
     "author": "dummyuser6",
-    "image": "https://via.placeholder.com/250x250",
+    "image": "https://via.placeholder.com/400x400",
     "votes": 12
   },
   {
@@ -52,7 +52,7 @@
     "community": "Netflix",
     "caption": "Stranger Things - The ultimate sci-fi series.",
     "author": "dummyuser7",
-    "image": "https://via.placeholder.com/250x250",
+    "image": "https://via.placeholder.com/400x400",
     "votes": 3
   },
   {
@@ -60,7 +60,7 @@
     "community": "Marvel",
     "caption": "Spider-Man: No Way Home - The most anticipated movie of the year.",
     "author": "dummyuser8",
-    "image": "https://via.placeholder.com/250x250",
+    "image": "https://via.placeholder.com/400x400",
     "votes": 18
   },
   {
@@ -68,7 +68,7 @@
     "community": "Star Wars",
     "caption": "The Mandalorian - The best Star Wars series yet.",
     "author": "dummyuser9",
-    "image": "https://via.placeholder.com/250x250",
+    "image": "https://via.placeholder.com/400x400",
     "votes": 7
   },
   {
@@ -76,7 +76,7 @@
     "community": "DC Comics",
     "caption": "The Batman - The dark knight returns.",
     "author": "dummyuser10",
-    "image": "https://via.placeholder.com/250x250",
+    "image": "https://via.placeholder.com/400x400",
     "votes": 13
   }
 ]

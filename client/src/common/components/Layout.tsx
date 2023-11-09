@@ -10,12 +10,9 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div className="h-screen overflow-y-hidden">
+    <div className="bg-black">
       <Navbar />
-      <div className="flex">
-        <main className="container mx-auto overflow-y-scroll">{children}</main>
-        <footer>Yes, this is the footer.</footer>
-      </div>
+      <main className="container mx-auto">{children}</main>
     </div>
   );
 };
