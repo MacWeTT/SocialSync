@@ -1,11 +1,14 @@
 export interface PostCardProps {
-  data: PostCard;
+  post: PostCard;
 }
 
 export interface PostCard {
   id: number;
-  title: string;
-  content: string;
+  community: string;
+  caption: string;
+  author: string;
+  image: string;
+  votes: number;
 }
 
 export interface NavTextProps {

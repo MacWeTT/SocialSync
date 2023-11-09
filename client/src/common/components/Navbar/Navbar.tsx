@@ -10,8 +10,15 @@ import {
 import { FaSearch } from "react-icons/fa";
 
 import "./Navbar.css";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [search, setSearch] = useState("");
+
+  const handleSearch = () => {
+    if (search === "") return;
+  };
+
   return (
     <nav>
       <Link to="/" className="mr-4 text-2xl">
@@ -24,9 +31,12 @@ const Navbar = () => {
         </div>
         <input
           type="text"
+          placeholder="Search for posts, communities, or users..."
           name="Search SocialSync..."
           id=""
           className="search-bar"
+          onChange={(e) => setSearch(e.target.value)}
+          onMouseEnter={handleSearch}
         />
       </div>
       <div className="nav-links">

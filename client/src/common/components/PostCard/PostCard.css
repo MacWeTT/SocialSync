@@ -1,0 +1,35 @@
+.post-card {
+  @apply w-[500px] h-max rounded-md p-4;
+}
+
+.post-header {
+  @apply flex items-center mb-2;
+}
+
+.post-upvote {
+  @apply flex flex-col justify-center items-center mr-4;
+}
+
+.upvote-arrow,
+.downvote-arrow {
+  @apply hover:cursor-pointer;
+}
+
+.post-body,
+.post-footer {
+  @apply ml-8;
+}
+
+.post-body h1 {
+  @apply text-xl font-medium mb-2;
+}
+
+.post-footer {
+  @apply mt-4 flex gap-4;
+}
+
+.comment-icon,
+.share-icon,
+.save-icon {
+  @apply flex items-center gap-1 cursor-pointer text-lg;
+}
