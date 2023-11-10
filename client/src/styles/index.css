@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Homepage Layout */
+.main-container {
+  @apply flex mx-auto overflow-y-scroll;
+  height: calc(100vh - 70px);
+}
+
 /* Homepage Masonry Grid */
 .my-masonry-grid {
   display: -webkit-box;

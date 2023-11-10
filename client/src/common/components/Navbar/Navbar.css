@@ -1,5 +1,5 @@
 nav {
-  @apply flex justify-evenly p-4 bg-primary text-white box-border items-center;
+  @apply flex justify-evenly p-4 bg-primary text-white box-border items-center h-[70px];
 }
 
 .community-tab {
