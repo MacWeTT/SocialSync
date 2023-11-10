@@ -3,3 +3,9 @@ from .models import Post, Comment, Vote, Notification, Community
 from django.contrib.auth import get_user_model
 
 User = get_user_model()
+
+
+class PostSerializer(ModelSerializer):
+    class Meta:
+        model = Post
+        fields = "__all__"

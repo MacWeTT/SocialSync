@@ -19,7 +19,8 @@ class Community(Base):
     description = models.TextField()
     admins = models.ManyToManyField(User, related_name="communities")
     members = models.ManyToManyField(User, related_name="communities_joined")
-    banner = models.ImageField(upload_to="communities", blank=True, null=True)
+    banner = models.ImageField(upload_to="communities/banner", blank=True, null=True)
+    logo = models.ImageField(upload_to="communities/logo", blank=True, null=True)
 
     def __str__(self):
         return self.name
